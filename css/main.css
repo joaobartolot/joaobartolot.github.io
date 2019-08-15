@@ -1,8 +1,31 @@
+/* Importing fonts */
+@font-face {
+    font-family: 'Montserrat-light';
+    src: url(../font/Montserrat-Light.ttf)
+}
+@font-face {
+    font-family: 'Montserrat-medium';
+    src: url(../font/Montserrat-Medium.ttf)
+}
+@font-face {
+    font-family: 'Montserrat-regular';
+    src: url(../font/Montserrat-Regular.ttf)
+}
+@font-face {
+    font-family: 'Montserrat-semi-bold';
+    src: url(../font/Montserrat-SemiBold.ttf)
+}
+@font-face {
+    font-family: 'Montserrat-thin';
+    src: url(../font/Montserrat-Thin.ttf)
+}
+
 /* Begin of the home part */
 html body {
     padding: 0;
     margin: 0;
     height: 100%;
+    font-family: 'Montserrat-regular';
 }
 
 .home-section {
@@ -20,12 +43,15 @@ html body {
 
 .navbar-container {
     width: auto;
+    flex-grow: 1;
+    background: rgba(255, 255, 255, 0.329);
 }
 
 .navbar-link-container {
     width: auto;
     padding-left: 0;
     padding-top: 20px;
+    padding-bottom: 20px;
     margin-top:0;
 
     display: flex;
@@ -39,43 +65,51 @@ html body {
 .navbar-link a {
     text-decoration: none;
     color: black;
+    font-family: 'Montserrat-semi-bold'
 }
 
 .navbar-link a:hover {
     color: rgb(80, 80, 80);
 }
 
-section.content {
+div.content {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
     width: 50%;
     margin-left: 9%;
-    margin-bottom: 20%;
+    flex-grow: 2;
 }
 
-section.content .first {
+div.content .first {
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
-section.content .seccond {
+div.content .seccond {
     margin-top: 0;
     padding-top: 0;
 }
 
-section.home-footer {
+div.home-footer {
     display: flex;
     flex-flow: column;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 8%;
+    flex-grow: 0;
+    background: rgba(255, 255, 255, 0.329);
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-section.home-footer a {
+div.home-footer a {
     text-decoration: none;
     margin-top: 6px;
     display: flex;
     justify-content: center;
 }
 
-section.home-footer .footer-icon {
+div.home-footer .footer-icon {
     width: 60%;
     height: auto;
 }
@@ -115,7 +149,7 @@ section.home-footer .footer-icon {
 }
 
 .about-me {
-    background: black;
+    background: rgb(78, 78, 78);
     color: white;
     flex-grow: 1;
     border-top-right-radius: 20px;
@@ -123,6 +157,7 @@ section.home-footer .footer-icon {
     display: flex;
     flex-flow: column;
     justify-content: space-around;
+    padding-bottom: 3%;
 }
 
 .about-me p {
@@ -133,14 +168,13 @@ div.about-footer {
     display: flex;
     flex-flow: column;
     align-items: center;
-    margin-top: 10%;
 }
 
 div.about-footer a {
     text-decoration: none;
-    margin-top: 6px;
     display: flex;
     justify-content: center;
+    padding-top: 1%;
 }
 
 div.about-footer .footer-icon {
@@ -155,6 +189,31 @@ div.about-footer .footer-icon {
 
 .projects-section {
     height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projects-header {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects-body {
+    flex-grow: 3;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 92%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    background: white;
+    border: 1px solid rgb(186, 187, 189);
+    border-radius: 7px;
 }
 
 /* End of the projects part */
