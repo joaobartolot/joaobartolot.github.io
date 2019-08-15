@@ -1,0 +1,160 @@
+/* Begin of the home part */
+html body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.home-section {
+    background: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 10%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.navbar-container {
+    width: auto;
+}
+
+.navbar-link-container {
+    width: auto;
+    padding-left: 0;
+    padding-top: 20px;
+    margin-top:0;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+.navbar-link {
+    list-style: none;
+}
+
+.navbar-link a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-link a:hover {
+    color: rgb(80, 80, 80);
+}
+
+section.content {
+    width: 50%;
+    margin-left: 9%;
+    margin-bottom: 20%;
+}
+
+section.content .first {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+section.content .seccond {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+section.home-footer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 8%;
+}
+
+section.home-footer a {
+    text-decoration: none;
+    margin-top: 6px;
+    display: flex;
+    justify-content: center;
+}
+
+section.home-footer .footer-icon {
+    width: 60%;
+    height: auto;
+}
+
+/* End of the home part */
+
+/* Begin of the about part */
+
+.about-section {
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-header {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.photo-container {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.photo {
+    width: 200px;
+    height: 200px;
+    background: url(../images/perfil.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.about-me {
+    background: black;
+    color: white;
+    flex-grow: 1;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.about-me p {
+    padding: 5% 10%;
+}
+div.about-footer {
+    color: white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 10%;
+}
+
+div.about-footer a {
+    text-decoration: none;
+    margin-top: 6px;
+    display: flex;
+    justify-content: center;
+}
+
+div.about-footer .footer-icon {
+    width: 60%;
+    height: auto;
+}
+
+
+/* End of the about part */
+
+/* Begin of the projects part */
+
+.projects-section {
+    height: 100vh;
+}
+
+/* End of the projects part */
