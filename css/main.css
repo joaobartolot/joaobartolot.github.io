@@ -16,6 +16,10 @@
     src: url(../font/Montserrat-SemiBold.ttf)
 }
 @font-face {
+    font-family: 'Montserrat-bold';
+    src: url(../font/Montserrat-Bold.ttf)
+}
+@font-face {
     font-family: 'Montserrat-thin';
     src: url(../font/Montserrat-Thin.ttf)
 }
@@ -157,7 +161,6 @@ div.home-footer .footer-icon {
     display: flex;
     flex-flow: column;
     justify-content: space-around;
-    padding-bottom: 3%;
 }
 
 .about-me p {
@@ -188,7 +191,6 @@ div.about-footer .footer-icon {
 /* Begin of the projects part */
 
 .projects-section {
-    height: 100vh;
     display: flex;
     flex-flow: column;
     justify-content: space-around;
@@ -196,10 +198,16 @@ div.about-footer .footer-icon {
 }
 
 .projects-header {
+    background: rgb(78, 78, 78);
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    color: white;
 }
 
 .projects-body {
@@ -209,11 +217,71 @@ div.about-footer .footer-icon {
     justify-content: center;
     align-items: center;
     width: 92%;
-    margin-top: 7%;
+    margin-top: -1rem;
     margin-bottom: 7%;
+    box-shadow: 1px 1px 5px rgb(105, 105, 105);
     background: white;
     border: 1px solid rgb(186, 187, 189);
     border-radius: 7px;
+}
+
+.projects-item {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-grow: 1;
+    width: 300px;
+    height: 300px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Montserrat-bold'
+}
+
+.projects-item#mymoney {
+    background: url(../images/mymoney.jpg);
+    background-size: cover;
+}
+
+.projects-item#bash-script {
+    background: url(../images/bash_script.jpg);
+    background-size: cover;
+}
+
+.projects-item#nestle {
+    background: url(../images/graphs.jpg);
+    background-size: cover;
+    color: black;
+}
+
+.projects-item .background{
+    position: absolute;
+}
+
+.projects-item .front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    scale: 0;
+}
+
+.projects-item .front:hover {
+    opacity: 1;
+    scale: 1;
+}
+
+@media (min-width: 800px) {
+    .projects-body {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+    }
 }
 
 /* End of the projects part */
