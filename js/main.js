@@ -7,3 +7,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+var mymoney = document.getElementById('mymoney')
