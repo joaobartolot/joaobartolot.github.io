@@ -280,7 +280,15 @@ div.about-footer .footer-icon {
     .projects-body {
         display: flex;
         flex-flow: row;
+        flex-wrap: wrap;
         justify-content: space-around;
+    }
+
+    .projects-item {
+        width: 200px;
+        height: 200px;
+        margin-left: 3%;
+        margin-right: 3%;
     }
 }
 
