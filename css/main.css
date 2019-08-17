@@ -241,29 +241,9 @@ div.about-footer .footer-icon {
     font-family: 'Montserrat-bold'
 }
 
-.projects-item#mymoney {
-    background: url(../images/mymoney.jpg);
-    background-size: cover;
-}
-
-.projects-item#bash-script {
-    background: url(../images/bash_script.jpg);
-    background-size: cover;
-}
-
-.projects-item#data-visualization {
-    background: url(../images/graphs.jpg);
-    background-size: cover;
-    color: black;
-}
-
-.projects-item .background{
-    position: absolute;
-}
-
 .projects-item .front {
     display: flex;
-		flex-flow: column;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
@@ -271,14 +251,56 @@ div.about-footer .footer-icon {
     height: 100%;
     opacity: 0;
     scale: 0;
+    color: black;
+    transition: all cubic-bezier(0.47, 0, 0.745, 0.715) 0.2s;
+}
+
+.projects-item#bash .front {
+    color: white;
 }
 
 .projects-item .front h4 {
-		text-align: center;
+    padding-right: 10%;
+    padding-left: 10%;
+    text-align: center;
+    transition: all cubic-bezier(0.47, 0, 0.745, 0.715) 0.2s;
 }
 
-.projects-item .front:hover {
-		background: yellow;
+.projects-item#mymoney {
+    background: url(../images/mymoney.jpg);
+    background-size: cover;
+    color: black;
+}
+
+.projects-item#visualization {
+    background: url(../images/graphs.jpg);
+    background-size: cover;
+    color: black;
+}
+
+.projects-item#bash {
+    background: url(../images/bash_script.jpg);
+    background-size: cover;
+}
+
+.projects-item .background{
+    position: absolute;
+}
+
+.projects-item#mymoney .front:hover {
+    background: rgba(226, 226, 226, 0.76);
+    opacity: 1;
+    scale: 1;
+}
+
+.projects-item#visualization .front:hover {
+    background: rgba(226, 226, 226, 0.76);
+    opacity: 1;
+    scale: 1;
+}
+
+.projects-item#bash .front:hover {
+    background: rgba(41, 41, 41, 0.692);
     opacity: 1;
     scale: 1;
 }
@@ -297,6 +319,19 @@ div.about-footer .footer-icon {
         margin-left: 3%;
         margin-right: 3%;
     }
+}
+
+.projects-item .front a {
+    text-decoration: none;
+    border-radius: 30px;
+    border: 2px solid black;
+    padding: 5px;
+    color: black;
+}
+
+.projects-item .front a#bash {
+    border-color: white;
+    color: white;
 }
 
 /* End of the projects part */

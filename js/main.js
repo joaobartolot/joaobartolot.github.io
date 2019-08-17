@@ -9,3 +9,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 var mymoney = document.getElementById('mymoney')
+
+mymoney.addEventListener('mouseover', function () {
+    mymoney.childNodes[1].style.display = 'none'
+})
+mymoney.addEventListener('mouseout', function () {
+    mymoney.childNodes[1].style.display = 'block'
+})
+
+var bash = document.getElementById('bash')
+
+bash.addEventListener('mouseover', function () {
+    bash.childNodes[1].style.display = 'none'
+})
+bash.addEventListener('mouseout', function () {
+    bash.childNodes[1].style.display = 'block'
+})
+
+var visualization = document.getElementById('visualization')
+
+visualization.addEventListener('mouseover', function () {
+    visualization.childNodes[1].style.display = 'none'
+})
+visualization.addEventListener('mouseout', function () {
+    visualization.childNodes[1].style.display = 'block'
+})
