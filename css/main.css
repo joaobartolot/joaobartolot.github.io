@@ -48,7 +48,7 @@ html body {
 .navbar-container {
     width: auto;
     flex-grow: 1;
-    background: rgba(255, 255, 255, 0.329);
+    background: rgba(235, 235, 235, 0.774);
 }
 
 .navbar-link-container {
@@ -101,7 +101,7 @@ div.home-footer {
     justify-content: center;
     align-items: center;
     flex-grow: 0;
-    background: rgba(255, 255, 255, 0.329);
+    background: rgba(235, 235, 235, 0.774);
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -154,10 +154,9 @@ div.home-footer .footer-icon {
 
 .about-me {
     background: rgb(78, 78, 78);
+    width: 100%;
     color: white;
     flex-grow: 1;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
     display: flex;
     flex-flow: column;
     justify-content: space-around;
