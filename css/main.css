@@ -32,11 +32,15 @@ html body {
     font-family: 'Montserrat-regular';
 }
 
-.home-section {
+.home-container{
     background: url(../images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 10%;
+    height: 100vh;
+}
+.home-section {
+    background: rgba(255, 255, 255, 0.582);
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -48,7 +52,6 @@ html body {
 .navbar-container {
     width: auto;
     flex-grow: 1;
-    background: rgba(235, 235, 235, 0.774);
 }
 
 .navbar-link-container {
@@ -80,13 +83,20 @@ div.content {
     display: flex;
     justify-content: center;
     flex-flow: column;
-    width: 50%;
+    width: 60%;
     margin-left: 9%;
-    flex-grow: 2;
+    position: relative;
+    bottom: 15%;
 }
 
 div.content .first {
     margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+div.content .middle {
+    margin-bottom: 0;
+    margin-top: 0;
     padding-bottom: 0;
 }
 
@@ -101,12 +111,12 @@ div.home-footer {
     justify-content: center;
     align-items: center;
     flex-grow: 0;
-    background: rgba(235, 235, 235, 0.774);
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
 div.home-footer a {
+    cursor: pointer;
     text-decoration: none;
     margin-top: 6px;
     display: flex;
@@ -126,19 +136,25 @@ div.home-footer .footer-icon {
     height: 100vh;
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    background: rgb(37, 37, 37);
 }
 
 .about-header {
-    flex-grow: 1;
     display: flex;
     flex-flow: column;
     justify-content: center;
+    color: rgb(219, 219, 219);
 }
 
+.about-wrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
 .photo-container {
-    flex-grow: 1;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -153,10 +169,8 @@ div.home-footer .footer-icon {
 }
 
 .about-me {
-    background: rgb(78, 78, 78);
     width: 100%;
-    color: white;
-    flex-grow: 1;
+    color: rgb(219, 219, 219);
     display: flex;
     flex-flow: column;
     justify-content: space-around;
@@ -184,6 +198,16 @@ div.about-footer .footer-icon {
     height: auto;
 }
 
+@media (min-width: 700px) {
+    .about-wrapper {
+        flex-flow: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .about-me {
+        width: 40%
+    }
+}
 
 /* End of the about part */
 
@@ -197,7 +221,7 @@ div.about-footer .footer-icon {
 }
 
 .projects-header {
-    background: rgb(78, 78, 78);
+    background: rgb(37, 37, 37);
     flex-grow: 1;
     display: flex;
     flex-direction: column;
