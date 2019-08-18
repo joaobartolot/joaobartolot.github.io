@@ -348,8 +348,13 @@ div.about-footer .footer-icon {
     text-decoration: none;
     border-radius: 30px;
     border: 2px solid black;
-    padding: 5px;
+    padding: 5px 10px;
     color: black;
+}
+
+.projects-item .front a:hover {
+    border-color: rgb(41, 41, 41);
+    color: rgb(41, 41, 41);
 }
 
 .projects-item .front a#bash {
@@ -357,4 +362,36 @@ div.about-footer .footer-icon {
     color: white;
 }
 
+.projects-item .front a#bash:hover {
+    border-color: rgb(204, 204, 204);
+    color: rgb(204, 204, 204);
+}
+
 /* End of the projects part */
+
+/* Footer part */
+
+footer {
+    background: rgb(37, 37, 37);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer small {
+    padding-top: 5%;
+    color: #f9f9f9;
+}
+
+.social {
+    padding: 5% 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.social a {
+    padding: 0 5%;
+}
