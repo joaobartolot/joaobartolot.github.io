@@ -306,6 +306,12 @@ div.about-footer .footer-icon {
     background-size: cover;
 }
 
+.projects-item#asteroid {
+    background: url(../images/asteroid.jpg);
+    background-size: cover;
+    color: black;
+}
+
 .projects-item .background{
     position: absolute;
 }
@@ -324,6 +330,12 @@ div.about-footer .footer-icon {
 
 .projects-item#bash .front:hover {
     background: rgba(41, 41, 41, 0.692);
+    opacity: 1;
+    scale: 1;
+}
+
+.projects-item#asteroid .front:hover {
+    background: rgba(226, 226, 226, 0.76);
     opacity: 1;
     scale: 1;
 }

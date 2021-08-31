@@ -34,3 +34,12 @@ visualization.addEventListener('mouseover', function () {
 visualization.addEventListener('mouseout', function () {
     visualization.childNodes[1].style.display = 'block'
 })
+
+var asteroid = document.getElementById('asteroid')
+
+asteroid.addEventListener('mouseover', function () {
+    asteroid.childNodes[1].style.display = 'none'
+})
+asteroid.addEventListener('mouseout', function () {
+    asteroid.childNodes[1].style.display = 'block'
+})
